@@ -5,48 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Владимир Бугаев (pptxman) · PowerPoint & Презентации</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-    <style>
-/* The magic wrapper */
-.ios-pdf-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto; /* Allows scrolling inside the wrapper */
-    -webkit-overflow-scrolling: touch; /* CRITICAL: Enables smooth momentum scrolling on iOS */
-}
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYW4VYCEPN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LYW4VYCEPN');
 
-.ios-pdf-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+      // This is the trick: Instantly redirect the user to the actual PDF file
+      window.onload = function() {
+          window.location.replace("ru.pptxman.pdf");
+      };
+    </script>
+    
+    <style>
+        body { 
+            margin: 0; 
+            font-family: sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background-color: #f0f0f0;
+        }
     </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYW4VYCEPN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LYW4VYCEPN');
-</script>
 <body>
-
-<body>
-
-<body>
-    <div class="ios-pdf-wrapper">
-        <iframe src="ru.pptxman.pdf"></iframe>
-    </div>
-</body>
-
-</body>
-
+    <p>Loading presentation...</p>
 </body>
 </html>
