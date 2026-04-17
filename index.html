@@ -10,18 +10,21 @@
     <link rel="manifest" href="/site.webmanifest">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYW4VYCEPN"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYW4VYCEPN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-LYW4VYCEPN');
 
-      // Instantly redirect the user to the actual PDF file
+      // Wait for the page to load, then start a timer
       window.onload = function() {
-          window.location.replace("ru.pptxman.pdf");
+          // The setTimeout function delays the redirect
+          setTimeout(function() {
+              window.location.replace("ru.pptxman.pdf");
+          }, 4200); // Time in milliseconds
       };
     </script>
-    
     <style>
         body { 
             margin: 0; 
