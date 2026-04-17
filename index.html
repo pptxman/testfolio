@@ -16,7 +16,7 @@
       gtag('js', new Date());
       gtag('config', 'G-LYW4VYCEPN');
 
-      // This is the trick: Instantly redirect the user to the actual PDF file
+      // Instantly redirect the user to the actual PDF file
       window.onload = function() {
           window.location.replace("ru.pptxman.pdf");
       };
@@ -25,16 +25,23 @@
     <style>
         body { 
             margin: 0; 
-            font-family: sans-serif; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
             height: 100vh; 
-            background-color: #f0f0f0;
+            background-color: #f8f9fa; /* You can change this to #ffffff if you want a pure white background */
+        }
+
+        /* Styling for your GIF */
+        .gif-loader {
+            width: 60px; /* Adjust this number to make your GIF bigger or smaller */
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <p>Loading presentation...</p>
+
+    <img src="loading.gif" alt="Loading" class="gif-loader">
+
 </body>
 </html>
