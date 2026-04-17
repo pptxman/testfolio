@@ -9,7 +9,22 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
     <style>
-        iframe { width: 100%; height: 100vh; border: none }
+/* The magic wrapper */
+.ios-pdf-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto; /* Allows scrolling inside the wrapper */
+    -webkit-overflow-scrolling: touch; /* CRITICAL: Enables smooth momentum scrolling on iOS */
+}
+
+.ios-pdf-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
     </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -25,7 +40,11 @@
 
 <body>
 
-<iframe src="ru.pptxman.pdf"></iframe>
+<body>
+    <div class="ios-pdf-wrapper">
+        <iframe src="ru.pptxman.pdf"></iframe>
+    </div>
+</body>
 
 </body>
 
