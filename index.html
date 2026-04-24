@@ -8,43 +8,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYW4VYCEPN"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYW4VYCEPN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-LYW4VYCEPN');
-
-      // Wait for the page to load, then start a timer
-      window.onload = function() {
-          // The setTimeout function delays the redirect
-          setTimeout(function() {
-              window.location.replace("ru.pptxman.pdf");
-          }, 4200); // Time in milliseconds
-      };
     </script>
     <style>
-        body { 
-            margin: 0; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            background-color: #f8f9fa; /* You can change this to #ffffff if you want a pure white background */
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
         }
-
-        /* Styling for your GIF */
-        .gif-loader {
-            width: 60px; /* Adjust this number to make your GIF bigger or smaller */
-            height: auto;
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
         }
     </style>
 </head>
 <body>
-
-    <img src="loading.gif" alt="Loading" class="gif-loader">
-
+    <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://pptxman.github.io/testfolio/ru.pptxman.pptx"></iframe>
 </body>
 </html>
