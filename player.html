@@ -15,6 +15,12 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-LYW4VYCEPN');
+
+      // On mobile, redirect to Google Slides' own viewer (the embed iframe
+      // shows only one tiny slide on a phone-sized viewport).
+      if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+        window.location.replace('https://docs.google.com/presentation/d/11f-1DZkkKVUQ3RRbRdPhJgoTC0BMNjmtMu5d9krSJ5I/edit?usp=sharing');
+      }
     </script>
     <style>
         body {

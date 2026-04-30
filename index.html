@@ -15,6 +15,14 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-LYW4VYCEPN');
+
+      // On mobile, the embedded iframe shrinks a landscape slide into a portrait
+      // viewport and only one slide is visible. Send mobile visitors to Google
+      // Slides' own viewer (editor URL — opens viewer mode for non-editors,
+      // and the Google Slides app on iOS/Android if installed).
+      if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+        window.location.replace('https://docs.google.com/presentation/d/11f-1DZkkKVUQ3RRbRdPhJgoTC0BMNjmtMu5d9krSJ5I/edit?usp=sharing');
+      }
     </script>
     <style>
         body {
